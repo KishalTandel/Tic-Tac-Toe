@@ -4,7 +4,7 @@ let newGame = document.querySelector(".new");
 let msg = document.querySelector(".msg");
 let main = document.querySelector("main");
 let turnO = true;
-let count = 1;
+let count = 0;
 
 // Win Patterns
 const winPatterns = [
@@ -35,7 +35,7 @@ let check = () => {
             main.classList.add("hide");
             newGame.classList.remove("hide");
             msg.classList.remove("hide");
-            msg.innerText =`Game draw`;
+            msg.innerText =`It's a draw`;
             turnO = true;
         }
     }
@@ -45,7 +45,6 @@ let check = () => {
 // for tracking moves played
 squares.forEach((square) => {
     square.addEventListener("click", () => {
-        console.log("square was clicked");
         if (turnO) {
             square.innerText = "O";
             turnO = false;
@@ -54,8 +53,8 @@ squares.forEach((square) => {
             turnO =true;
         }
         square.disabled = true;
-        check();
         count++;
+        check();
     });
 });
 
@@ -64,9 +63,10 @@ resetGame.addEventListener("click", () => {
     squares.forEach((square) => {
         square.disabled = false;
         square.innerText = "";
+        count = 0;
+        turnO = true;
 })
 });
-
 
 // for starting new game
 newGame.addEventListener("click", () => {
@@ -78,4 +78,6 @@ newGame.addEventListener("click", () => {
     msg.innerText ="";
     msg.classList.add("hide");
     main.classList.remove("hide");
+    count = 0;
+    turnO = true;
 });

@@ -21,8 +21,8 @@ main {
 }
 
 .container {
-    height: 65vmin;
-    width: 65vmin;
+    height: 80vmin;
+    width: 80vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -31,20 +31,20 @@ main {
 
 .square {
     background-color: #F8F9FA;
-    height: 20vmin;
-    width: 20vmin;
+    height: 25vmin;
+    width: 25vmin;
     border-radius: 2vmin;
     border: none;
-    font-size: 10vmin;
+    font-size: 15vmin;
     color: #212529;
 }
 
 .reset {
     background-color: #F8F9FA;
     margin-top: 5vmin;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     height: 5vmin;
-    width: 15vmin;
+    width: 20vmin;
     border-radius: 1vmin;
     border: none;
     color: #212529;
@@ -67,7 +67,7 @@ main {
 .msg {
     margin-bottom: 2vmin;
     color: #F8F9FA;
-    font-size: 5vmin;
+    font-size: 7.5vmin;
     margin-top: 40vmin;
     margin-right: 10px;
 }
@@ -75,9 +75,9 @@ main {
 .new {
     background-color: #F8F9FA;
     margin-top: 5vmin;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     height: 5vmin;
-    width: 15vmin;
+    width: 20vmin;
     border-radius: 1vmin;
     border: none;
     color: #212529;

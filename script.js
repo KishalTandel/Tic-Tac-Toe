@@ -31,14 +31,14 @@ let check = () => {
             msg.classList.remove("hide");
             msg.innerText =`Player ${pos0} won`;
             turnO = true;
-        } 
-       }else if (count === 9) {                        // condition for draw
+        }else if (count === 9) {                        // condition for draw
             main.classList.add("hide");
             newGame.classList.remove("hide");
             msg.classList.remove("hide");
             msg.innerText =`It's a draw`;
             turnO = true;
-        }
+         }
+       }
     }
 };
 

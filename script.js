@@ -31,6 +31,7 @@ let check = () => {
             msg.classList.remove("hide");
             msg.innerText =`Player ${pos0} won`;
             turnO = true;
+            break;
         }else if (count === 9) {                        // condition for draw
             main.classList.add("hide");
             newGame.classList.remove("hide");

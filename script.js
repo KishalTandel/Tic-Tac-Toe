@@ -66,7 +66,7 @@ resetGame.addEventListener("click", () => {
         square.innerText = "";
         count = 0;
         turnO = true;
-})
+});
 });
 
 // for starting new game

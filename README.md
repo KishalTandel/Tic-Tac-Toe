@@ -1,5 +1,5 @@
 <div align="center">
-    Tic-Tac-Toe
+    <a href="https://kishaltandel.github.io/Tic-Tac-Toe/">Tic-Tac-Toe</a>
 </div>
 <br>
 <div align="center">
